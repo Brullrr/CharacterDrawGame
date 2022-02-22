@@ -13,7 +13,7 @@ html {
     padding: 0;
     margin: 0;
     grid-template-rows: 15vh 60vh 25vh;
-    background-image: url(./Images/Paper\ Background.jpg);
+    background-image: url(./Images/Pink\ Background.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -65,9 +65,9 @@ html {
 .DisplayButtonHolder button {
     height: calc(4vh + 4vw);
     width: calc(15vh + 15vw);
-    color: seagreen;
-    background-color: rgba(46, 139, 86, 0.342);
-    border: 2px solid seagreen;
+    color: blue;
+    background-color: rgba(0, 0, 255, 0.226);
+    border: 2px solid blue;
     border-radius: calc(1vh + 1vw);
     justify-self: center;
     font-size:  calc(1.25vh + 1.25vw);
