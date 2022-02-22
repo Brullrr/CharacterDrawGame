@@ -5,12 +5,12 @@ const DisplayButtonHolder = document.querySelector('.DisplayButtonHolder');
 
 
 const charactersImagesArray = [
-    'images/Abu.gif',
-    'images/Aladdin.png',
-    'images/Genie.gif',
-    'images/Iago.jpg',
-    'images/Jafar.png',
-    'images/Jasmine.png',
+    '/images/Abu.gif',
+    '/images/Aladdin.png',
+    '/images/Genie.gif',
+    '/images/Iago.jpg',
+    '/images/Jafar.png',
+    '/images/Jasmine.png',
 ];
 
 let randomNumber = 0;
