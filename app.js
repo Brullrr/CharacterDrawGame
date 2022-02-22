@@ -5,12 +5,12 @@ const DisplayButtonHolder = document.querySelector('.DisplayButtonHolder');
 
 
 const charactersImagesArray = [
-    '/images/Abu.gif',
-    '/images/Aladdin.png',
-    '/images/Genie.gif',
-    '/images/Iago.jpg',
-    '/images/Jafar.png',
-    '/images/Jasmine.png',
+    'https://brullrr.github.io/CharacterDrawGame/images/Abu.gif',
+    'https://brullrr.github.io/CharacterDrawGame/images/Aladdin.png',
+    'https://brullrr.github.io/CharacterDrawGame/images/Genie.gif',
+    'https://brullrr.github.io/CharacterDrawGame/images/Iago.jpg',
+    'https://brullrr.github.io/CharacterDrawGame/images/Jafar.png',
+    'https://brullrr.github.io/CharacterDrawGame/images/Jasmine.png',
 ];
 
 let randomNumber = 0;
