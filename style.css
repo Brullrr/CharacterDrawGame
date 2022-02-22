@@ -1,0 +1,71 @@
+html {
+    height: 100%;
+}
+
+.body {
+    position: absolute;
+    left: 0%;
+    top:0%;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100vw;
+    padding: 0;
+    margin: 0;
+    grid-template-rows: 15vh 70vh 15vh;
+    background: linear-gradient(to right, white, grey);
+}
+.DisplayTextHolder {
+    padding: 0;
+    margin: 0;
+    height: 15vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 100vw;
+    background-color: transparent;
+
+}
+
+.DisplayText {
+    width: 90%;
+    justify-self: center;
+    font-size: calc(5vh + 5vw);
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    text-align: center;
+}
+
+.ChangingDiv {
+    height: 70vh;
+    font-size: calc(10vh + 10vw);
+    line-height: 70vh;
+    width: 50%;
+    justify-self: center;
+    background-color: transparent;
+    text-align: center;
+}
+
+.ChangingDiv img {
+    height: 100%;
+    width: 100%
+}
+
+.DisplayButtonHolder {
+
+    display: grid;
+    grid-template-columns: 100vw;
+    background-color: transparent;
+}
+
+.DisplayButtonHolder button {
+    height: calc(2vh + 2vw);
+    width: calc(10vh + 10vw);
+    color: rgb(75, 15, 94);
+    background-color: lightseagreen;
+    border: none;
+    border-radius: calc(1vh + 1vw);
+    justify-self: center;
+    font-size:  calc(1vh + 1vw);
+    cursor: pointer;
+}
