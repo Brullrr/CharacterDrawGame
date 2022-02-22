@@ -12,8 +12,10 @@ html {
     grid-template-columns: 100vw;
     padding: 0;
     margin: 0;
-    grid-template-rows: 15vh 70vh 15vh;
-    background: linear-gradient(to right, white, grey);
+    grid-template-rows: 15vh 60vh 25vh;
+    background-image: url(./Images/Paper\ Background.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .DisplayTextHolder {
     padding: 0;
@@ -37,35 +39,39 @@ html {
 }
 
 .ChangingDiv {
-    height: 70vh;
+    height: 60vh;
     font-size: calc(10vh + 10vw);
     line-height: 70vh;
     width: 50%;
     justify-self: center;
     background-color: transparent;
     text-align: center;
+    overflow: hidden;
 }
 
 .ChangingDiv img {
     height: 100%;
-    width: 100%
+    width: 100%;
 }
 
 .DisplayButtonHolder {
-
+    height: 25vh;
+    width: 100vw;
     display: grid;
     grid-template-columns: 100vw;
     background-color: transparent;
 }
 
 .DisplayButtonHolder button {
-    height: calc(2vh + 2vw);
-    width: calc(10vh + 10vw);
-    color: rgb(75, 15, 94);
-    background-color: lightseagreen;
-    border: none;
+    height: calc(4vh + 4vw);
+    width: calc(15vh + 15vw);
+    color: seagreen;
+    background-color: rgba(46, 139, 86, 0.342);
+    border: 2px solid seagreen;
     border-radius: calc(1vh + 1vw);
     justify-self: center;
-    font-size:  calc(1vh + 1vw);
+    font-size:  calc(1.25vh + 1.25vw);
+    font-weight: 800;
     cursor: pointer;
+    margin-top: 2.5vh;
 }

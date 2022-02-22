@@ -449,6 +449,184 @@ const charactersImagesArray = [
         movie: 'Disney\'s Toy Story' 
     },
     //Hercules
+    {
+        name: 'Hades',
+        pathway: 'Images/Hades.png',
+        movie: 'Disney\'s Hercules' 
+    },
+    {
+        name: 'Hercules',
+        pathway: 'Images/Hercules.png',
+        movie: 'Disney\'s Hercules' 
+    },
+    {
+        name: 'Megara',
+        pathway: 'Images/Megara.png',
+        movie: 'Disney\'s Hercules' 
+    },
+    //Mulan
+    {
+        name: 'Mulan',
+        pathway: 'Images/Mulan.png',
+        movie: 'Disney\'s Mulan' 
+    },
+    {
+        name: 'Mushu',
+        pathway: 'Images/Mushu.png',
+        movie: 'Disney\'s Mulan' 
+    },
+    {
+        name: 'Li Shang',
+        pathway: 'Images/Li Shang.png',
+        movie: 'Disney\'s Mulan' 
+    },
+    //Bugs life
+    {
+        name: 'Flik',
+        pathway: 'Images/Flik.png',
+        movie: 'Disney\'s A Bug\'s Life' 
+    },
+    {
+        name: 'Heimlich',
+        pathway: 'Images/Heimlich.png',
+        movie: 'Disney\'s A Bug\'s Life' 
+    },
+
+    //Tarzan
+    {
+        name: 'Tarzan',
+        pathway: 'Images/Tarzan.png',
+        movie: 'Disney\'s Tarzan' 
+    },
+    {
+        name: 'Jane',
+        pathway: 'Images/Jane.png',
+        movie: 'Disney\'s Tarzan' 
+    },
+    {
+        name: 'Clayton',
+        pathway: 'Images/Clayton.png',
+        movie: 'Disney\'s Tarzan' 
+    },
+    {
+        name: 'Terk',
+        pathway: 'Images/Terk.png',
+        movie: 'Disney\'s Tarzan' 
+    },
+    // Emperors new Groove
+    {
+        name: 'Kuzco',
+        pathway: 'Images/Kuzco.png',
+        movie: 'Disney\'s The Emperor\'s New Groove' 
+    },
+    {
+        name: 'Yzma',
+        pathway: 'Images/Yzma.png',
+        movie: 'Disney\'s The Emperor\'s New Groove' 
+    },
+    {
+        name: 'Kronk',
+        pathway: 'Images/Kronk.png',
+        movie: 'Disney\'s The Emperor\'s New Groove' 
+    },
+    {
+        name: 'Pacha',
+        pathway: 'Images/Pacha.png',
+        movie: 'Disney\'s The Emperor\'s New Groove' 
+    },
+    //Monsters Inc
+    {
+        name: 'Mike',
+        pathway: 'Images/Mike.png',
+        movie: 'Disney\'s Monster\'s Inc.' 
+    },
+    {
+        name: 'Sully',
+        pathway: 'Images/Sully.png',
+        movie: 'Disney\'s Monster\'s Inc.' 
+    },
+    {
+        name: 'Boo',
+        pathway: 'Images/Boo.png',
+        movie: 'Disney\'s Monster\'s Inc.' 
+    },
+    {
+        name: 'Randall',
+        pathway: 'Images/Randall.png',
+        movie: 'Disney\'s Monster\'s Inc.' 
+    },
+
+    //Lilo
+    //Nemo
+    //POTC
+    //Ratouille
+    //WallE
+    //Princess and the frog
+    //Cars
+    //Kermit and pig
+    //Wrekit ralph
+    //Frozen
+    //Big Hero6
+    //Zootopia
+    //Moana
+    //Coco
+
+    //Anime
+    //Nausica
+    //Totro
+    //Kikis
+    //Mononoke
+    //SpiritedAway
+    //Howls
+//Demon Slayer
+//Hunter x
+//Dragon ball
+//Onepiece
+//Konan
+//Inuyasha
+//YuYuhakusho
+//Sailormoon
+//POkemon
+//Death Note
+
+
+//Cartoons
+//FostersHome
+//JohnnyBravo
+//Felix the cat
+//Peanuts
+//Mask
+//KND
+//Cow and chicken
+//Teen titans
+//Billy and mandy
+//Power puff girls
+//Dexters lab
+//Samurai Jack
+//Courage
+//Ed ed and eddie
+//popeye
+//Green Lantern
+//Flash
+//Wonder woman
+//Super man
+//Pinky and the brain
+//Jetsons
+//Flintstones
+//Garfield
+//Smurfs
+//Spiderman
+//Spongebob
+//Looney 
+//Looney Tunes
+//Batman
+//Scooby doo
+//TMNT
+//Avatar TLA
+//WHeres waldo 
+//Casper
+
+
 
 
 ];
@@ -466,10 +644,11 @@ const chooseCharacterButtonClicked = () => {
     chosenCharacter = charactersImagesArray[randomNumber].pathway 
     let text = charactersImagesArray[randomNumber].name + ' from ' + charactersImagesArray[randomNumber].movie
     DisplayText.innerHTML = text;
-    if(text.length >= 32) {
-
+    if(text.length >= 30) {
         DisplayText.style.fontSize = 'calc(3vh + 3vw)';
-        console.log(DisplayText.style.fontSize)
+    }
+    if(text.length >= 45) {
+        DisplayText.style.fontSize = 'calc(2vh + 2vw)';
     }
     phase = 1;
     changeButton();
