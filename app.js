@@ -67,7 +67,8 @@ const startGameButtonClicked = () => {
 const showPictureButtonClicked = () => {
     ChangingDiv.innerHTML = '';
     let img = document.createElement('img');
-    img.src = chosenCharacter;
+    img.src = chosenCharacter ;
+    console.log(img.src)
     ChangingDiv.appendChild(img);
     phase = 4;
     changeButton();
