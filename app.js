@@ -5,12 +5,12 @@ const DisplayButtonHolder = document.querySelector('.DisplayButtonHolder');
 
 
 const charactersImagesArray = [
-    './images/Abu.gif',
-    './images/Aladdin.png',
-    './images/Genie.gif',
-    './images/Iago.jpg',
-    './images/Jafar.png',
-    './images/Jasmine.png',
+    'images/Abu.gif',
+    'images/Aladdin.png',
+    'images/Genie.gif',
+    'images/Iago.jpg',
+    'images/Jafar.png',
+    'images/Jasmine.png',
 ];
 
 let randomNumber = 0;
@@ -23,8 +23,7 @@ const chooseCharacterButtonClicked = () => {
     randomNumber = Math.floor(Math.random()*charactersImagesArray.length);
     chosenCharacter = charactersImagesArray[randomNumber]  
     position1 = chosenCharacter.indexOf('.')
-    position2 = chosenCharacter.indexOf('.', position1 + 1)
-    chosenCharacterNameOnly = chosenCharacter.substring(9, position2)
+    chosenCharacterNameOnly = chosenCharacter.substring(7, position1)
     DisplayText.innerHTML = chosenCharacterNameOnly;
     phase = 1;
     changeButton();
