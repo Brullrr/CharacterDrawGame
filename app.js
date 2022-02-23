@@ -653,7 +653,7 @@ const chooseCharacterButtonClicked = () => {
     phase = 1;
     changeButton();
 }
-const alottedTime = 60;
+const alottedTime = 100;
 let seconds = 0;
 
 const renderTimer = (timeRemaining) => {
@@ -667,9 +667,11 @@ const renderTimer = (timeRemaining) => {
 
 }
 
+let timerInterval;
+
 const decreaseSeconds = () => {
         let start = Date.now();
-        let timerInterval = setInterval(() => {
+        timerInterval = setInterval(() => {
                 let delta = Date.now() - start;
                 seconds = Math.floor(delta / 1000);
                 let renderTime = alottedTime - seconds;
@@ -680,11 +682,18 @@ const decreaseSeconds = () => {
                 }
                 renderTimer(renderTime);
             }, 1000);
+
 }
 
 const startGameButtonClicked = () => {
     decreaseSeconds();
     phase = 2;
+    changeButton();
+}
+
+const timerSkipped = () => {
+    clearInterval(timerInterval)
+    phase = 3;
     changeButton();
 }
 
@@ -701,7 +710,7 @@ const showPictureButtonClicked = () => {
 const playAgainButtonClicked = () => {
     DisplayText.innerHTML = 'Click the button to start!';
     ChangingDiv.innerHTML = '';
-    phase = 0;
+    phase = 1;
     changeButton();
 }
  
@@ -721,6 +730,12 @@ const changeButton = () => {
                 DisplayButton = document.createElement('button');
                 DisplayButton.innerHTML = 'Start Game'
                 DisplayButton.addEventListener('click', startGameButtonClicked);
+                DisplayButtonHolder.appendChild(DisplayButton);
+            break;
+            case 2: 
+                DisplayButton = document.createElement('button');
+                DisplayButton.innerHTML = 'Skip Timer'
+                DisplayButton.addEventListener('click', timerSkipped);
                 DisplayButtonHolder.appendChild(DisplayButton);
             break;
         case 3: 
