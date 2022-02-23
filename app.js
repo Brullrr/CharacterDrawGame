@@ -653,7 +653,7 @@ const chooseCharacterButtonClicked = () => {
     phase = 1;
     changeButton();
 }
-const alottedTime = 1;
+const alottedTime = 180;
 let seconds = 0;
 
 const renderTimer = (timeRemaining) => {
